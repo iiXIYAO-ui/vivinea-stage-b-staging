@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <link rel="icon" href="data:," />
+    <title data-i18n="meta.title">VIVINEA — Discover Yourself Through Art.</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+<body>
+    <noscript><p class="noscript-notice">JavaScript is off in this browser. This preview needs JavaScript for page navigation and language switching — the home page below is shown in English.</p></noscript>
+    <header class="site-header">
+      <div class="header-in">
+        <div class="brand">
+          <span class="brand-name" data-i18n="ai_self_discovery">VIVINEA</span>
+        </div>
+        <nav class="main-nav" id="mainNav" aria-label="Pages" data-i18n-aria="nav.aria_pages">
+          <button data-nav="home" aria-current="page" data-i18n="home">Home</button>
+          <button data-nav="explore" data-i18n="explore">Explore</button>
+          <button data-nav="aesthetic" data-i18n="aesthetic">Aesthetic</button>
+          <button data-nav="assessment" data-i18n="assessment">Assessment</button>
+          <button data-nav="result" data-i18n="result">Result</button>
+          <button data-nav="about" data-i18n="about">About</button>
+        </nav>
+        <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav" data-i18n="menu">Menu</button>
+        <div class="lang-wrap"><label for="langSelect" data-i18n="lang.label">Language</label><select id="langSelect" data-i18n-aria="lang.aria" aria-label="Choose language"><option value="en">English</option><option value="zh-CN">简体中文</option><option value="zh-TW">繁體中文</option><option value="ko">한국어</option><option value="ja">日本語</option></select></div>
+      </div>
+    </header>
+
+    <main>
+      
+      <div class="page active" data-page="home">
+        <section class="hero" aria-label="Hero visual" data-i18n-aria="hero_visual">
+          <picture class="hero-picture" aria-hidden="true"><!-- Hero image slot (M4, empty): desktop assets/hero/hero-desktop-16x10.jpg (2400x1500), mobile assets/hero/hero-mobile-4x5.jpg (1200x1500). src/srcset are set only when a founder-approved file is placed; see PENDING-ASSETS.md slot registry. --><source media="(max-width: 767px)" /><img width="2400" height="1500" fetchpriority="high" decoding="async" alt="" aria-hidden="true" /></picture>
+          <div class="hero-art hero-art--desktop" aria-hidden="true"><div class="midtone"></div><div class="corridor"><i></i><i></i><i></i><i></i></div><div class="shaft"></div><div class="figure"></div><div class="floor"></div></div>
+          <div class="hero-art hero-art--mobile" aria-hidden="true"><div class="corridor"><i></i><i></i><i></i><i></i></div><div class="shaft"></div><div class="figure"></div></div>
+          <div class="hero-scrim" aria-hidden="true"></div>
+          <div class="hero-head"><div class="hero-head-in"><div class="hero-head-col">
+            <h1 data-i18n-html="html.discover_what_you_love_understand_what">Discover Yourself Through Art.</h1>
+          </div></div></div>
+          <div class="hero-body"><div class="hero-body-in"><div class="hero-body-col">
+            <p class="lede" style="margin-top:16px;" data-i18n="an_ai_powered_self_discovery_platform">An AI-powered space for self-discovery, aesthetic identity, and creative expression.</p>
+            <div class="btn-row">
+              <button class="btn" data-nav="aesthetic" data-i18n="start_with_aesthetic_identity">View the Aesthetic Identity preview</button>
+              <button class="btn secondary" data-nav="explore" data-i18n="explore_the_five_matrices">Explore the five matrices</button>
+            </div>
+            <p class="kicker" style="margin-top:18px;" data-i18n="brand_expression">Explore Yourself · Discover Aesthetics · Create Meaning</p>
+            <p class="small" style="margin-top:16px;" data-i18n="english_first_web_app_opens_in">English-first Web App — opens in any modern browser, no install. A tool for self-exploration and entertainment, not a psychological assessment or diagnosis.</p>
+          </div></div></div>
+        </section>
+        <div class="cut" aria-hidden="true"></div>
+        <div class="wrap">
+
+          <section class="block">
+            <p class="sec-num" aria-hidden="true">01</p>
+            <p class="kicker" data-i18n="the_mvp">The MVP</p>
+            <h2 data-i18n="one_matrix_first_done_properly">One matrix first, done properly</h2>
+            <p class="lede" data-i18n="hero_supporting">Explore who you are through visual experiences, cinema, fashion, and personal reflection. Discover the stories, images, and ideas that shape your sense of self.</p>
+            <p class="lede" data-i18n="the_first_release_focuses_on_aesthetic">The first release focuses on Aesthetic Identity alone, so its image bank, visual coding and scoring can be validated before anything else is built on top of them. The other four matrices stay visible in Explore — honestly labelled as coming soon, with nothing behind them yet.</p>
+            <div class="grid-2" style="margin-top:26px;">
+              <div class="card">
+                <div class="card-top"><h3 data-i18n="aesthetic_identity">Aesthetic Identity</h3><span class="chip open" data-i18n="open_mvp">Aesthetic Identity · Preview</span></div>
+                <p data-i18n="16_forced_choice_image_pairs_across">16 forced-choice image pairs across 8 aesthetic dimensions and 32 coded indicators — from Minimalism to Extravagance.</p>
+                <p class="mono" data-i18n="display_ids_aes_q001_aes_q016">Display IDs AES-Q001 – AES-Q016</p>
+                <div class="btn-row"><button class="link-btn" data-nav="aesthetic" data-i18n="view_the_matrix">View the matrix</button></div>
+              </div>
+              <div class="card">
+                <div class="card-top"><h3 data-i18n="personality_lifestyle_pet_future">Personality · Lifestyle · Pet · Future</h3><span class="chip" data-i18n="coming_soon">Coming soon</span></div>
+                <p data-i18n="four_further_matrices_are_fully_specified">Four further matrices are fully specified in the product foundation and question-bank architecture, and will open one at a time as each is validated.</p>
+                <div class="btn-row"><button class="link-btn" data-nav="explore" data-i18n="see_all_five_matrices">See all five matrices</button></div>
+              </div>
+            </div>
+          </section>
+
+          <section class="block">
+            <p class="sec-num" aria-hidden="true">02</p>
+            <p class="kicker" data-i18n="how_it_works">How it works</p>
+            <h2 data-i18n="from_a_choice_to_a_portrait">From a choice to a portrait, in four steps</h2>
+            <div class="steps" style="margin-top:24px;">
+              <div class="step"><span class="n">01</span><h3 data-i18n="choose_a_matrix">Choose a matrix</h3><p data-i18n="start_with_aesthetic_identity_the_only">Start with Aesthetic Identity — the only matrix available as a preview in this release.</p></div>
+              <div class="step"><span class="n">02</span><h3 data-i18n="answer_structured_questions">Answer structured questions</h3><p data-i18n="sixteen_image_pairs_pick_the_one">Sixteen image pairs. Pick the one you are drawn to — no neutral option, no skipping.</p></div>
+              <div class="step"><span class="n">03</span><h3 data-i18n="deterministic_scoring">Deterministic scoring</h3><p data-i18n="scores_come_from_documented_reproducible_rules">Scores come from documented, reproducible rules. AI never assigns or invents a score.</p></div>
+              <div class="step"><span class="n">04</span><h3 data-i18n="ai_interpretation">AI interpretation</h3><p data-i18n="ai_reads_the_scored_profile_draws">Once scoring is live, AI will read the scored profile, draw connections between dimensions, and suggest where to explore next.</p></div>
+            </div>
+          </section>
+
+          <section class="block">
+            <p class="sec-num" aria-hidden="true">03</p>
+            <p class="kicker" data-i18n="question_numbering_in_brief">Question numbering, in brief</p>
+            <h2 data-i18n="two_ids_for_every_question">Two IDs for every question</h2>
+            <p class="lede" data-i18n="what_you_see_while_answering_is">What you see while answering is a short display ID. Behind it, the question bank keeps a permanent internal ID that ties the question to its matrix, its dimension and its scoring record.</p>
+            <div class="table-scroll" style="margin-top:22px;">
+              <table class="spec">
+                <thead><tr><th data-i18n="layer">Layer</th><th data-i18n="format">Format</th><th data-i18n="example">Example</th><th data-i18n="used_for">Used for</th></tr></thead>
+                <tbody>
+                  <tr><td><b data-i18n="display_id">Display ID</b></td><td class="mono" data-i18n="aes_q001_aes_q016">AES-Q001 – AES-Q016</td><td class="mono">AES-Q001</td><td data-i18n="question_order_on_screen_question_1">Question order on screen — “Question 1 of 16”</td></tr>
+                  <tr><td><b data-i18n="internal_id">Internal ID</b></td><td class="mono">[Matrix]_[Dimension]_[Number]</td><td class="mono">AES_MIN_001</td><td data-i18n="question_bank_scoring_maps_version_history">Question bank, scoring maps, version history</td></tr>
+                  <tr><td><b data-i18n="indicator_pair">Indicator pair</b></td><td class="mono">[Letter][01–04] × [Letter][01–04]</td><td class="mono" data-i18n="m01_e01">M01 × E01</td><td data-i18n="the_two_coded_indicators_an_image">The two coded indicators an image pair contrasts</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="btn-row"><button class="link-btn" data-nav="about" data-i18n="how_the_numbering_works_in_full">How the numbering works, in full</button></div>
+          </section>
+        </div>
+      </div>
+
+      
+      <div class="page" data-page="explore">
+        <div class="wrap">
+          <section class="block" style="border-bottom:0; padding-bottom:8px;">
+            <p class="kicker" data-i18n="explore">Explore</p>
+            <h1 style="font-size:clamp(1.9rem,4.5vw,2.8rem);" data-i18n="five_identity_matrices">Five identity matrices</h1>
+            <p class="lede" style="margin-top:12px;" data-i18n="each_matrix_explores_a_different_layer">Each matrix explores a different layer of who you are. Only Aesthetic Identity is open in this release; the rest are specified, scheduled, and locked until they are ready — no previews pretending to be results.</p>
+          </section>
+          <section class="block" style="padding-top:10px;">
+            <div class="matrix-row">
+              <span class="num">01</span>
+              <div><h3 data-i18n="aesthetic_identity">Aesthetic Identity</h3><p data-i18n="your_visual_preferences_across_fashion_film">Your visual preferences across fashion, film, art, architecture and design — measured through image choices, not words.</p></div>
+              <div class="actions"><span class="chip open" data-i18n="open_mvp">Aesthetic Identity · Preview</span><button class="link-btn" data-nav="aesthetic" data-i18n="open_matrix">Open matrix</button></div>
+            </div>
+            <div class="matrix-row">
+              <span class="num">02</span>
+              <div><h3 data-i18n="personality_identity">Personality Identity</h3><p data-i18n="behavioural_tendencies_communication_style_decis">Behavioural tendencies, communication style, decision habits and social preferences, explored through written questions.</p></div>
+              <div class="actions"><span class="chip" data-i18n="coming_soon">Coming soon</span><button class="link-btn" disabled aria-disabled="true" data-i18n="locked">Locked</button></div>
+            </div>
+            <div class="matrix-row">
+              <span class="num">03</span>
+              <div><h3 data-i18n="lifestyle_identity">Lifestyle Identity</h3><p data-i18n="how_you_relate_to_cities_living">How you relate to cities, living spaces, travel, spending and the rhythm of everyday life.</p></div>
+              <div class="actions"><span class="chip" data-i18n="coming_soon">Coming soon</span><button class="link-btn" disabled aria-disabled="true" data-i18n="locked">Locked</button></div>
+            </div>
+            <div class="matrix-row">
+              <span class="num">04</span>
+              <div><h3 data-i18n="pet_identity">Pet Identity</h3><p data-i18n="the_fit_between_your_living_conditions">The fit between your living conditions and care capacity, and what different pets actually need.</p></div>
+              <div class="actions"><span class="chip" data-i18n="coming_soon">Coming soon</span><button class="link-btn" disabled aria-disabled="true" data-i18n="locked">Locked</button></div>
+            </div>
+            <div class="matrix-row">
+              <span class="num">05</span>
+              <div><h3 data-i18n="future_identity">Future Identity</h3><p data-i18n="interests_developing_skills_preferred_working_en">Interests, developing skills, preferred working environments and possible career themes.</p></div>
+              <div class="actions"><span class="chip" data-i18n="coming_soon">Coming soon</span><button class="link-btn" disabled aria-disabled="true" data-i18n="locked">Locked</button></div>
+            </div>
+            <div class="note" style="margin-top:26px;">
+              <p data-i18n-html="html.why_only_one_is_open_each"><b>Why only one is open.</b> Each matrix needs its own validated question bank and scoring rules before it can say anything trustworthy. Aesthetic goes first because visual preference is the most shareable, most immediate entry point — and because its framework (8 dimensions, 32 indicators, a visual coding manual) is the furthest along.</p>
+            </div>
+          </section>
+        </div>
+      </div>
+      
+      <div class="page" data-page="aesthetic">
+        <div class="wrap">
+          <section class="block" style="padding-bottom:26px;">
+            <p class="kicker" data-i18n="matrix_01_the_mvp">Matrix 01 · The MVP</p>
+            <h1 style="font-size:clamp(1.9rem,4.5vw,2.8rem);" data-i18n="aesthetic_identity">Aesthetic Identity</h1>
+            <p class="lede" style="margin-top:12px;" data-i18n="your_visual_preferences_across_fashion_film_2">Your visual preferences across fashion, film, art, architecture and visual culture — discovered through images, not words. You are shown two images and choose the one you are drawn to. Sixteen choices build a profile across eight dimensions.</p>
+            <div class="facts">
+              <div class="fact"><b>16</b><span data-i18n="questions">Questions</span></div>
+              <div class="fact"><b>2</b><span data-i18n="images_per_question">Images per question</span></div>
+              <div class="fact"><b>8</b><span data-i18n="dimensions">Dimensions</span></div>
+              <div class="fact"><b>32</b><span data-i18n="coded_indicators">Coded indicators</span></div>
+              <div class="fact"><b>AES-Q001–Q016</b><span data-i18n="display_ids">Display IDs</span></div>
+            </div>
+            <div class="btn-row">
+              <button class="btn" data-nav="assessment" data-i18n="see_the_assessment_format">View the assessment preview</button>
+              <button class="btn secondary" data-nav="result" data-i18n="preview_the_result_layout">Preview the result layout</button>
+            </div>
+          </section>
+
+          <section class="block">
+            <p class="kicker" data-i18n="how_a_question_is_built">How a question is built</p>
+            <h2 data-i18n="one_pair_two_dimensions">One pair, two dimensions</h2>
+            <p class="lede" data-i18n-html="html.each_question_contrasts_two_indicators_from">Each question contrasts two indicators from <em>different</em> dimensions — a cross-dimension pairing. That is deliberate: it forces a real preference trade-off instead of asking the same dimension twice.</p>
+            <div class="mock-q" style="margin-top:26px;">
+              <p class="mock-progress" data-i18n="aes_q001_internal_record_aes_min">AES-Q001 · Internal record AES_MIN_001</p>
+              <div class="mock-frames">
+                <div class="ph"><b>M01</b><span data-i18n="image_a_placeholder">Image A · Placeholder</span></div>
+                <div class="ph"><b>E01</b><span data-i18n="image_b_placeholder">Image B · Placeholder</span></div>
+              </div>
+              <div class="grid-2">
+                <div class="card"><h3 data-i18n="m01_form_simplification">M01 — Form Simplification</h3><p data-i18n="minimalism_clean_silhouettes_few_elements_geomet">Minimalism. Clean silhouettes, few elements, geometric clarity.</p></div>
+                <div class="card"><h3 data-i18n="e01_decorative_abundance">E01 — Decorative Abundance</h3><p data-i18n="extravagance_layered_ornament_rich_detail_decora">Extravagance. Layered ornament, rich detail, decoration built up in levels.</p></div>
+              </div>
+              <p class="small" style="margin-top:14px;" data-i18n="the_32_original_question_images_have">The 32 original question images have not been produced yet, so this pair is shown with placeholder blocks. Every final image will be coded under the Visual Coding Manual — one primary indicator, up to three secondary indicators, written visual evidence, and a confidence rating; low-confidence images never enter the bank.</p>
+            </div>
+            <div class="note" style="margin-top:22px;">
+              <p data-i18n-html="html.confirmed_pairings_aes_q001_m01_e01"><b>Confirmed pairings:</b> <span class="mono">AES-Q001 = M01 × E01</span>, <span class="mono">AES-Q002 = M02 × E02</span>, <span class="mono">AES-Q003 = M03 × E03</span>, <span class="mono">AES-Q004 = M04 × E04</span> and <span class="mono">AES-Q005 = H01 × V01</span> (Historical Continuity × Historical References). Pairings for Q006–Q016 are to be determined.</p>
+            </div>
+          </section>
+
+          <section class="block">
+            <p class="kicker" data-i18n="the_framework">The framework</p>
+            <h2 data-i18n="eight_dimensions_thirty_two_indicators">Eight dimensions, thirty-two indicators</h2>
+            <p class="lede" style="margin-bottom:22px;" data-i18n="from_the_secondary_indicators_framework_v1">From the Secondary Indicators Framework V1.0. Open a dimension to see its four observable indicators — the visual evidence coders look for in every image.</p>
+
+            <details class="dim">
+              <summary><span class="code">M</span><span class="name" data-i18n="minimalism">Minimalism</span><span class="chev" aria-hidden="true">▾</span></summary>
+              <div class="dim-body"><p data-i18n="a_preference_for_simplified_visual_language">A preference for simplified visual language, clear structure, restrained decoration and ordered space.</p>
+                <div class="ind-list">
+                  <div class="ind"><b data-i18n="m01_form_simplification_2">M01 · Form Simplification</b><span data-i18n="clean_silhouettes_reduced_elements_geometric_exp">Clean silhouettes, reduced elements, geometric expression</span></div>
+                  <div class="ind"><b data-i18n="m02_visual_space">M02 · Visual Space</b><span data-i18n="negative_space_breathing_room_between_elements">Negative space, breathing room between elements</span></div>
+                  <div class="ind"><b data-i18n="m03_decorative_restraint">M03 · Decorative Restraint</b><span data-i18n="low_ornament_simplified_detail_no_visual">Low ornament, simplified detail, no visual stacking</span></div>
+                  <div class="ind"><b data-i18n="m04_order_proportion">M04 · Order & Proportion</b><span data-i18n="structural_balance_visual_order_harmonious_ratio">Structural balance, visual order, harmonious ratios</span></div>
+                </div></div>
+            </details>
+            <details class="dim">
+              <summary><span class="code">H</span><span class="name" data-i18n="heritage">Heritage</span><span class="chev" aria-hidden="true">▾</span></summary>
+              <div class="dim-body"><p data-i18n="a_preference_for_historical_continuity_tradition">A preference for historical continuity, traditional forms and classic cultural symbols.</p>
+                <div class="ind-list">
+                  <div class="ind"><b data-i18n="h01_historical_continuity">H01 · Historical Continuity</b><span data-i18n="historic_styles_carried_forward_classic_design">Historic styles carried forward, classic design language</span></div>
+                  <div class="ind"><b data-i18n="h02_traditional_symbols">H02 · Traditional Symbols</b><span data-i18n="traditional_patterns_cultural_symbols_historic_o">Traditional patterns, cultural symbols, historic ornament</span></div>
+                  <div class="ind"><b data-i18n="h03_classic_forms">H03 · Classic Forms</b><span data-i18n="timeless_silhouettes_stable_proportions">Timeless silhouettes, stable proportions</span></div>
+                  <div class="ind"><b data-i18n="h04_cultural_heritage">H04 · Cultural Heritage</b><span data-i18n="regional_culture_traditional_craft_cultural_iden">Regional culture, traditional craft, cultural identity</span></div>
+                </div></div>
+            </details>
+            <details class="dim">
+              <summary><span class="code">R</span><span class="name" data-i18n="romanticism">Romanticism</span><span class="chev" aria-hidden="true">▾</span></summary>
+              <div class="dim-body"><p data-i18n="a_preference_for_softness_delicacy_emotional">A preference for softness, delicacy, emotional atmosphere and poetic expression.</p>
+                <div class="ind-list">
+                  <div class="ind"><b data-i18n="r01_soft_lines">R01 · Soft Lines</b><span data-i18n="flowing_curves_gentle_contours_nothing_rigid">Flowing curves, gentle contours, nothing rigid</span></div>
+                  <div class="ind"><b data-i18n="r02_lightness_flow">R02 · Lightness & Flow</b><span data-i18n="light_materials_drift_and_movement">Light materials, drift and movement</span></div>
+                  <div class="ind"><b data-i18n="r03_poetic_narrative">R03 · Poetic Narrative</b><span data-i18n="mood_natural_imagery_a_sense_of">Mood, natural imagery, a sense of story</span></div>
+                  <div class="ind"><b data-i18n="r04_delicate_details">R04 · Delicate Details</b><span data-i18n="fine_detail_soft_ornament_delicate_texture">Fine detail, soft ornament, delicate texture</span></div>
+                </div></div>
+            </details>
+            <details class="dim">
+              <summary><span class="code">S</span><span class="name" data-i18n="sensuality">Sensuality</span><span class="chev" aria-hidden="true">▾</span></summary>
+              <div class="dim-body"><p data-i18n="a_preference_for_body_awareness_sensory">A preference for body awareness, sensory experience, visual tension and confident expression.</p>
+                <div class="ind-list">
+                  <div class="ind"><b data-i18n="s01_body_awareness">S01 · Body Awareness</b><span data-i18n="body_contour_garments_that_follow_or">Body contour, garments that follow or emphasise structure</span></div>
+                  <div class="ind"><b data-i18n="s02_tactile_materials">S02 · Tactile Materials</b><span data-i18n="leather_silk_sheen_and_touch_in">Leather, silk, sheen and touch in contrast</span></div>
+                  <div class="ind"><b data-i18n="s03_visual_tension">S03 · Visual Tension</b><span data-i18n="strong_contrast_conflicting_lines_visual_impact">Strong contrast, conflicting lines, visual impact</span></div>
+                  <div class="ind"><b data-i18n="s04_confident_expression">S04 · Confident Expression</b><span data-i18n="bold_silhouette_clear_attitude_presence">Bold silhouette, clear attitude, presence</span></div>
+                </div></div>
+            </details>
+            <details class="dim">
+              <summary><span class="code">A</span><span class="name" data-i18n="avant_garde">Avant-garde</span><span class="chev" aria-hidden="true">▾</span></summary>
+              <div class="dim-body"><p data-i18n="a_preference_for_experimentation_unconventional_">A preference for experimentation, unconventional structure, conceptual expression and breaking convention.</p>
+                <div class="ind-list">
+                  <div class="ind"><b data-i18n="a01_structural_experimentation">A01 · Structural Experimentation</b><span data-i18n="deconstruction_unconventional_construction_and_c">Deconstruction, unconventional construction and combination</span></div>
+                  <div class="ind"><b data-i18n="a02_unconventional_proportion">A02 · Unconventional Proportion</b><span data-i18n="exaggerated_proportion_asymmetry_shifted_forms">Exaggerated proportion, asymmetry, shifted forms</span></div>
+                  <div class="ind"><b data-i18n="a03_conceptual_expression">A03 · Conceptual Expression</b><span data-i18n="abstract_ideas_art_concepts_non_narrative">Abstract ideas, art concepts, non-narrative expression</span></div>
+                  <div class="ind"><b data-i18n="a04_material_innovation">A04 · Material Innovation</b><span data-i18n="unusual_materials_recombination_experimental_sur">Unusual materials, recombination, experimental surfaces</span></div>
+                </div></div>
+            </details>
+            <details class="dim">
+              <summary><span class="code">E</span><span class="name" data-i18n="extravagance">Extravagance</span><span class="chev" aria-hidden="true">▾</span></summary>
+              <div class="dim-body"><p data-i18n="a_preference_for_visual_richness_layered">A preference for visual richness, layered decoration, vivid colour and dramatic effect.</p>
+                <div class="ind-list">
+                  <div class="ind"><b data-i18n="e01_decorative_abundance_2">E01 · Decorative Abundance</b><span data-i18n="rich_ornament_multi_layered_detail">Rich ornament, multi-layered detail</span></div>
+                  <div class="ind"><b data-i18n="e02_visual_drama">E02 · Visual Drama</b><span data-i18n="a_commanding_focal_point_theatrical_effect">A commanding focal point, theatrical effect</span></div>
+                  <div class="ind"><b data-i18n="e03_colour_pattern_intensity">E03 · Colour & Pattern Intensity</b><span data-i18n="saturated_colour_large_scale_pattern_bold">Saturated colour, large-scale pattern, bold combinations</span></div>
+                  <div class="ind"><b data-i18n="e04_luxurious_presentation">E04 · Luxurious Presentation</b><span data-i18n="rich_materials_lavish_surfaces_display_and">Rich materials, lavish surfaces, display and polish</span></div>
+                </div></div>
+            </details>
+            <details class="dim">
+              <summary><span class="code">C</span><span class="name" data-i18n="craftsmanship">Craftsmanship</span><span class="chev" aria-hidden="true">▾</span></summary>
+              <div class="dim-body"><p data-i18n="a_preference_for_material_quality_making">A preference for material quality, making detail, precise structure and evident craft.</p>
+                <div class="ind-list">
+                  <div class="ind"><b data-i18n="c01_material_quality">C01 · Material Quality</b><span data-i18n="material_character_and_how_materials_work">Material character and how materials work together</span></div>
+                  <div class="ind"><b data-i18n="c02_craft_details">C02 · Craft Details</b><span data-i18n="stitching_hand_finishing_surface_work">Stitching, hand finishing, surface work</span></div>
+                  <div class="ind"><b data-i18n="c03_making_techniques">C03 · Making Techniques</b><span data-i18n="weaving_embroidery_carving_and_other_techniques">Weaving, embroidery, carving and other techniques</span></div>
+                  <div class="ind"><b data-i18n="c04_structural_precision">C04 · Structural Precision</b><span data-i18n="exact_cutting_structural_integrity_finish">Exact cutting, structural integrity, finish</span></div>
+                </div></div>
+            </details>
+            <details class="dim">
+              <summary><span class="code">V</span><span class="name" data-i18n="vintage_cultural_expression">Vintage & Cultural Expression</span><span class="chev" aria-hidden="true">▾</span></summary>
+              <div class="dim-body"><p data-i18n="a_preference_for_era_styles_cultural">A preference for era styles, cultural symbols, vintage visual language and cross-cultural expression.</p>
+                <div class="ind-list">
+                  <div class="ind"><b data-i18n="v01_historical_references">V01 · Historical References</b><span data-i18n="elements_quoted_from_other_eras_period">Elements quoted from other eras, period atmosphere</span></div>
+                  <div class="ind"><b data-i18n="v02_cultural_symbols">V02 · Cultural Symbols</b><span data-i18n="regional_signs_folk_elements_cultural_pattern">Regional signs, folk elements, cultural pattern</span></div>
+                  <div class="ind"><b data-i18n="v03_vintage_aesthetics">V03 · Vintage Aesthetics</b><span data-i18n="aged_texture_retro_colour_historic_media">Aged texture, retro colour, historic media feel</span></div>
+                  <div class="ind"><b data-i18n="v04_cultural_fusion">V04 · Cultural Fusion</b><span data-i18n="cultures_combined_tradition_meeting_modernity">Cultures combined, tradition meeting modernity</span></div>
+                </div></div>
+            </details>
+
+            <div class="note" style="margin-top:22px;">
+              <p data-i18n-html="html.boundaries_the_coders_watch_minimalism_is"><b>Boundaries the coders watch.</b> Minimalism is not Craftsmanship — visual simplicity says nothing about quality of making. Heritage is not Vintage — continuity of tradition is not a retro look. Romanticism is not Sensuality, and Extravagance is not Avant-garde: visual excess is not experimentation. These distinctions come straight from the framework, and every coded image has to respect them.</p>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      
+      <div class="page" data-page="assessment">
+        <div class="wrap">
+          <section class="block" style="padding-bottom:26px;">
+            <p class="kicker" data-i18n="assessment_placeholder">Assessment · Placeholder</p>
+            <h1 style="font-size:clamp(1.9rem,4.5vw,2.8rem);" data-i18n="the_assessment_is_not_open_yet">The assessment is not open yet</h1>
+            <p class="lede" style="margin-top:12px;" data-i18n="this_page_fixes_the_layout_and">This page fixes the layout and format of the Aesthetic assessment so navigation and reading flow can be checked. The question images have not been produced and the interaction is not built — nothing here can be answered, and no result can come out of it.</p>
+          </section>
+          <section class="block" style="padding-top:6px;">
+            <div class="mock-q">
+              <p class="mock-progress" data-i18n="question_1_of_16">Question 1 of 16</p>
+              <p class="small" data-i18n="progress_is_shown_as_a_question">Progress is shown as a question count only — never a percentage. Each question is a forced choice between two images: there is no neutral option and no skipping.</p>
+              <div class="mock-frames">
+                <div class="ph"><b data-i18n="image_a">Image A</b><span data-i18n="m01_placeholder">M01 · Placeholder</span></div>
+                <div class="ph"><b data-i18n="image_b">Image B</b><span data-i18n="e01_placeholder">E01 · Placeholder</span></div>
+              </div>
+              <button class="btn" disabled aria-disabled="true" data-i18n="assessment_not_yet_open">Assessment not yet open</button>
+              <p class="small" style="margin-top:12px;" data-i18n="shown_aes_q001_internal_record_aes">Shown: AES-Q001 (internal record AES_MIN_001), pairing M01 Form Simplification × E01 Decorative Abundance. The frames above are placeholders — the original images are still to be made.</p>
+            </div>
+          </section>
+          <section class="block">
+            <p class="kicker" data-i18n="assessment.grid.title">All 16 questions — preview</p>
+            <h2 data-i18n="assessment.grid.title">All 16 questions — preview</h2>
+            <p class="lede" data-i18n="assessment.grid.intro">Questions 2–16 are shown as a prepared structure only. No image has been produced, no selection is possible, and nothing is stored.</p>
+            <div class="q-grid">
+<div class="q-row"><div class="q-head"><span class="q-num">Q002</span><span class="mono">AES-Q002</span><span class="mono">M02 × E02</span><span class="chip build" data-i18n="assessment.preview_not_active">Preview — not active</span></div><div class="q-slots"><div class="q-slot"><b>A</b><span data-i18n="assessment.preview_image_pending">Image pending</span></div><div class="q-slot"><b>B</b><span data-i18n="assessment.preview_image_pending">Image pending</span></div></div></div>
+<div class="q-row"><div class="q-head"><span class="q-num">Q003</span><span class="mono">AES-Q003</span><span class="mono">M03 × E03</span><span class="chip build" data-i18n="assessment.preview_not_active">Preview — not active</span></div><div class="q-slots"><div class="q-slot"><b>A</b><span data-i18n="assessment.preview_image_pending">Image pending</span></div><div class="q-slot"><b>B</b><span data-i18n="assessment.preview_image_pending">Image pending</span></div></div></div>
+<div class="q-row"><div class="q-head"><span class="q-num">Q004</span><span class="mono">AES-Q004</span><span class="mono">M04 × E04</span><span class="chip build" data-i18n="assessment.preview_not_active">Preview — not active</span></div><div class="q-slots"><div class="q-slot"><b>A</b><span data-i18n="assessment.preview_image_pending">Image pending</span></div><div class="q-slot"><b>B</b><span data-i18n="assessment.preview_image_pending">Image pending</span></div></div></div>
+<div class="q-row"><div class="q-head"><span class="q-num">Q005</span><span class="mono">AES-Q005</span><span class="mono">H01 × V01</span><span class="chip build" data-i18n="assessment.preview_not_active">Preview — not active</span></div><div class="q-slots"><div class="q-slot"><b>A</b><span data-i18n="assessment.preview_image_pending">Image pending</span></div><div class="q-slot"><b>B</b><span data-i18n="assessment.preview_image_pending">Image pending</span></div></div></div>
+<div class="q-row"><div class="q-head"><span class="q-num">Q006</span><span class="mono">AES-Q006</span><span data-i18n="assessment.preview_pairing_tbd">Pairing to be determined</span><span class="chip build" data-i18n="assessment.preview_not_active">Preview — not active</span></div><div class="q-slots"><div class="q-slot"><b>A</b><span data-i18n="assessment.preview_image_pending">Image pending</span></div><div class="q-slot"><b>B</b><span data-i18n="assessment.preview_image_pending">Image pending</span></div></div></div>
+<div class="q-row"><div class="q-head"><span class="q-num">Q007</span><span class="mono">AES-Q007</span><span data-i18n="assessment.preview_pairing_tbd">Pairing to be determined</span><span class="chip build" data-i18n="assessment.preview_not_active">Preview — not active</span></div><div class="q-slots"><div class="q-slot"><b>A</b><span data-i18n="assessment.preview_image_pending">Image pending</span></div><div class="q-slot"><b>B</b><span data-i18n="assessment.preview_image_pending">Image pending</span></div></div></div>
+<div class="q-row"><div class="q-head"><span class="q-num">Q008</span><span class="mono">AES-Q008</span><span data-i18n="assessment.preview_pairing_tbd">Pairing to be determined</span><span class="chip build" data-i18n="assessment.preview_not_active">Preview — not active</span></div><div class="q-slots"><div class="q-slot"><b>A</b><span data-i18n="assessment.preview_image_pending">Image pending</span></div><div class="q-slot"><b>B</b><span data-i18n="assessment.preview_image_pending">Image pending</span></div></div></div>
+<div class="q-row"><div class="q-head"><span class="q-num">Q009</span><span class="mono">AES-Q009</span><span data-i18n="assessment.preview_pairing_tbd">Pairing to be determined</span><span class="chip build" data-i18n="assessment.preview_not_active">Preview — not active</span></div><div class="q-slots"><div class="q-slot"><b>A</b><span data-i18n="assessment.preview_image_pending">Image pending</span></div><div class="q-slot"><b>B</b><span data-i18n="assessment.preview_image_pending">Image pending</span></div></div></div>
+<div class="q-row"><div class="q-head"><span class="q-num">Q010</span><span class="mono">AES-Q010</span><span data-i18n="assessment.preview_pairing_tbd">Pairing to be determined</span><span class="chip build" data-i18n="assessment.preview_not_active">Preview — not active</span></div><div class="q-slots"><div class="q-slot"><b>A</b><span data-i18n="assessment.preview_image_pending">Image pending</span></div><div class="q-slot"><b>B</b><span data-i18n="assessment.preview_image_pending">Image pending</span></div></div></div>
+<div class="q-row"><div class="q-head"><span class="q-num">Q011</span><span class="mono">AES-Q011</span><span data-i18n="assessment.preview_pairing_tbd">Pairing to be determined</span><span class="chip build" data-i18n="assessment.preview_not_active">Preview — not active</span></div><div class="q-slots"><div class="q-slot"><b>A</b><span data-i18n="assessment.preview_image_pending">Image pending</span></div><div class="q-slot"><b>B</b><span data-i18n="assessment.preview_image_pending">Image pending</span></div></div></div>
+<div class="q-row"><div class="q-head"><span class="q-num">Q012</span><span class="mono">AES-Q012</span><span data-i18n="assessment.preview_pairing_tbd">Pairing to be determined</span><span class="chip build" data-i18n="assessment.preview_not_active">Preview — not active</span></div><div class="q-slots"><div class="q-slot"><b>A</b><span data-i18n="assessment.preview_image_pending">Image pending</span></div><div class="q-slot"><b>B</b><span data-i18n="assessment.preview_image_pending">Image pending</span></div></div></div>
+<div class="q-row"><div class="q-head"><span class="q-num">Q013</span><span class="mono">AES-Q013</span><span data-i18n="assessment.preview_pairing_tbd">Pairing to be determined</span><span class="chip build" data-i18n="assessment.preview_not_active">Preview — not active</span></div><div class="q-slots"><div class="q-slot"><b>A</b><span data-i18n="assessment.preview_image_pending">Image pending</span></div><div class="q-slot"><b>B</b><span data-i18n="assessment.preview_image_pending">Image pending</span></div></div></div>
+<div class="q-row"><div class="q-head"><span class="q-num">Q014</span><span class="mono">AES-Q014</span><span data-i18n="assessment.preview_pairing_tbd">Pairing to be determined</span><span class="chip build" data-i18n="assessment.preview_not_active">Preview — not active</span></div><div class="q-slots"><div class="q-slot"><b>A</b><span data-i18n="assessment.preview_image_pending">Image pending</span></div><div class="q-slot"><b>B</b><span data-i18n="assessment.preview_image_pending">Image pending</span></div></div></div>
+<div class="q-row"><div class="q-head"><span class="q-num">Q015</span><span class="mono">AES-Q015</span><span data-i18n="assessment.preview_pairing_tbd">Pairing to be determined</span><span class="chip build" data-i18n="assessment.preview_not_active">Preview — not active</span></div><div class="q-slots"><div class="q-slot"><b>A</b><span data-i18n="assessment.preview_image_pending">Image pending</span></div><div class="q-slot"><b>B</b><span data-i18n="assessment.preview_image_pending">Image pending</span></div></div></div>
+<div class="q-row"><div class="q-head"><span class="q-num">Q016</span><span class="mono">AES-Q016</span><span data-i18n="assessment.preview_pairing_tbd">Pairing to be determined</span><span class="chip build" data-i18n="assessment.preview_not_active">Preview — not active</span></div><div class="q-slots"><div class="q-slot"><b>A</b><span data-i18n="assessment.preview_image_pending">Image pending</span></div><div class="q-slot"><b>B</b><span data-i18n="assessment.preview_image_pending">Image pending</span></div></div></div>
+            </div>
+          </section>
+          <section class="block">
+            <p class="kicker" data-i18n="before_it_can_open">Before it can open</p>
+            <h2 data-i18n="what_is_still_being_built">What is still being built</h2>
+            <div class="steps" style="margin-top:24px;">
+              <div class="step"><span class="n">01</span><h3 data-i18n="32_original_images">32 original images</h3><p data-i18n="two_per_question_for_q001_q016">Two per question for Q001–Q016, produced to the visual coding manual — starting with an 8-image validation batch for Q001–Q004.</p></div>
+              <div class="step"><span class="n">02</span><h3 data-i18n="independent_coding">Independent coding</h3><p data-i18n="each_image_coded_by_two_reviewers">Each image coded by two reviewers independently, then reconciled. Low-confidence images are excluded.</p></div>
+              <div class="step"><span class="n">03</span><h3 data-i18n="remaining_pairings">Remaining pairings</h3><p data-i18n="q001_q005_pairings_are_confirmed_q006">Q001–Q005 pairings are confirmed; Q006–Q016 are decided as the bank is built, then frozen.</p></div>
+              <div class="step"><span class="n">04</span><h3 data-i18n="scoring_validation">Scoring validation</h3><p data-i18n="no_question_enters_the_live_assessment">No question enters the live assessment without a documented, validated scoring rule.</p></div>
+            </div>
+            <div class="btn-row"><button class="link-btn" data-nav="result" data-i18n="preview_the_result_layout_instead">Preview the result layout instead</button></div>
+          </section>
+        </div>
+      </div>
+      
+      <div class="page" data-page="result">
+        <div class="wrap">
+          <section class="block" style="padding-bottom:26px;">
+            <p class="kicker" data-i18n="result_preview">Result · Preview</p>
+            <h1 style="font-size:clamp(1.9rem,4.5vw,2.8rem);" data-i18n="aesthetic_identity_result_layout">Aesthetic portrait — example</h1>
+            <p class="lede" style="margin-top:12px;" data-i18n="this_page_previews_the_shape_of">This page previews the shape of a result: how the eight dimensions will be presented once scoring is live.</p>
+            <div class="banner" style="margin-top:20px;">
+              <p data-i18n-html="html.layout_preview_only_the_values_below"><b>Layout preview only.</b> The values below are illustrative placeholders that show the design — they are not a real result, nothing has been calculated, and the scoring engine is not connected in Foundation V1.2.</p>
+            </div>
+          </section>
+          <section class="block" style="padding-top:6px;">
+            <div class="card">
+              <div class="card-top"><h3 data-i18n="your_aesthetic_profile">Your aesthetic profile</h3><span class="chip" data-i18n="sample_v1_1">Sample · V1.2</span></div>
+              <p data-i18n="relative_strength_across_the_eight_dimensions">Relative strength across the eight dimensions, strongest first in the full report.</p>
+              <div id="bars" style="margin-top:10px;">
+                <div class="bar-row"><div class="bar-name">Minimalism<span data-i18n="simplified_form_space_restraint">Simplified form, space, restraint</span></div><div class="bar-track"><div class="bar-fill" data-w="82"></div></div><div class="bar-val">82</div></div>
+                <div class="bar-row"><div class="bar-name">Craftsmanship<span data-i18n="material_quality_and_making_detail">Material quality and making detail</span></div><div class="bar-track"><div class="bar-fill" data-w="74"></div></div><div class="bar-val">74</div></div>
+                <div class="bar-row"><div class="bar-name">Romanticism<span data-i18n="softness_flow_poetic_mood">Softness, flow, poetic mood</span></div><div class="bar-track"><div class="bar-fill" data-w="64"></div></div><div class="bar-val">64</div></div>
+                <div class="bar-row"><div class="bar-name">Avant-garde<span data-i18n="experiment_and_concept">Experiment and concept</span></div><div class="bar-track"><div class="bar-fill" data-w="57"></div></div><div class="bar-val">57</div></div>
+                <div class="bar-row"><div class="bar-name">Vintage & Cultural<span data-i18n="era_references_and_cultural_signs">Era references and cultural signs</span></div><div class="bar-track"><div class="bar-fill" data-w="52"></div></div><div class="bar-val">52</div></div>
+                <div class="bar-row"><div class="bar-name">Heritage<span data-i18n="continuity_and_classic_form">Continuity and classic form</span></div><div class="bar-track"><div class="bar-fill" data-w="46"></div></div><div class="bar-val">46</div></div>
+                <div class="bar-row"><div class="bar-name">Sensuality<span data-i18n="body_tactility_tension">Body, tactility, tension</span></div><div class="bar-track"><div class="bar-fill" data-w="38"></div></div><div class="bar-val">38</div></div>
+                <div class="bar-row"><div class="bar-name">Extravagance<span data-i18n="ornament_drama_intensity">Ornament, drama, intensity</span></div><div class="bar-track"><div class="bar-fill" data-w="29"></div></div><div class="bar-val">29</div></div>
+              </div>
+              <p class="small" style="margin-top:14px;" data-i18n="illustrative_values_for_layout_only">Illustrative values for layout only.</p>
+            </div>
+          </section>
+          <section class="block">
+            <p class="kicker" data-i18n="in_the_full_report">In the full report</p>
+            <h2 data-i18n="what_a_finished_result_will_add">What a finished result will add</h2>
+            <div class="grid-3" style="margin-top:22px;">
+              <div class="card"><h3 data-i18n="ai_interpretation">AI interpretation</h3><p data-i18n="a_written_reading_of_your_scored">A written reading of your scored profile — patterns across dimensions, tensions worth noticing, questions to explore. The AI interprets scores; it never creates them.</p></div>
+              <div class="card"><h3 data-i18n="evidence_trail">Evidence trail</h3><p data-i18n="every_score_traces_back_to_the">Every score traces back to the questions, indicator codes and scoring-rule version that produced it, so a result can always be re-derived and audited.</p></div>
+              <div class="card"><h3 data-i18n="deep_report">Deep report</h3><p data-i18n="a_longer_paid_report_and_a">A longer paid report and a personal exploration archive are planned. All pricing is a hypothesis until it is validated with real users.</p></div>
+            </div>
+            <p class="small" style="margin-top:18px;" data-i18n="results_describe_preferences_not_fixed_identity">Results describe preferences, not fixed identity. Preferences change, and a later result is allowed to disagree with an earlier one.</p>
+          </section>
+        </div>
+      </div>
+
+      
+      <div class="page" data-page="about">
+        <div class="wrap">
+          <section class="block" style="padding-bottom:26px;">
+            <p class="kicker" data-i18n="about">About</p>
+            <h1 style="font-size:clamp(1.9rem,4.5vw,2.8rem);" data-i18n="know_yourself_a_little_more_clearly">Know yourself, a little more clearly</h1>
+            <p class="lede" style="margin-top:12px;" data-i18n="the_ai_self_discovery_platform_exists">VIVINEA exists to help people discover what they love, understand what fits them, recognise their own patterns, and explore who they could become — through structured assessments, transparent scoring and AI interpretation, once they are live.</p>
+            <p style="max-width:62ch;" data-i18n-html="html.it_is_also_the_foundation_of">VIVINEA connects with the podcast BEFORE BECOMING, continuing to explore how we come to know ourselves, understand the world, and gradually become who we want to be.</p>
+            <p style="max-width:62ch;" data-i18n="it_is_deliberately_not_a_psychological">It is deliberately not a psychological test, not an MBTI-style typing tool and not a diagnosis. It is a structured mirror for self-exploration and entertainment, built to be honest about what it can and cannot claim.</p>
+          </section>
+
+          <section class="block">
+            <p class="kicker" data-i18n="foundation_v1_1">Foundation V1.2</p>
+            <h2 data-i18n="decisions_locked_for_this_version">Decisions locked for this version</h2>
+            <dl class="deflist" style="margin-top:20px;">
+              <dt data-i18n="edition">Edition</dt><dd data-i18n="international_edition_for_international_users">International edition, for international users.</dd>
+              <dt data-i18n="language">Language</dt><dd data-i18n="english_first_interface_questions_and_reports">English first — interface, questions and reports are written in English; other languages may follow without changing question IDs.</dd>
+              <dt data-i18n="platform">Platform</dt><dd data-i18n="a_web_app_that_runs_in">A Web App that runs in the browser (including iPad Safari). Not a WeChat mini-program, and not yet a downloadable app.</dd>
+              <dt data-i18n="mvp_scope">MVP scope</dt><dd data-i18n="aesthetic_identity_only_personality_identity_is">Aesthetic Identity only. Personality Identity is deferred to a later release; Lifestyle, Pet and Future remain in the long-term plan.</dd>
+              <dt data-i18n="this_preview">This preview</dt><dd data-i18n="six_pages_for_navigation_and_layout">Six pages for navigation and layout verification. The assessment is a placeholder, the result is a layout preview, the images are placeholders, and there is no scoring, no AI report and no AI API connection.</dd>
+              <dt data-i18n="principles">Principles</dt><dd data-i18n="individuality_explainability_adaptability_person">Individuality, explainability, adaptability, personalisation, privacy and non-judgment. Results are never permanent identity labels.</dd>
+            </dl>
+          </section>
+
+          <section class="block">
+            <p class="kicker" data-i18n="question_numbering">Question numbering</p>
+            <h2 data-i18n="how_the_ids_are_decided">How the IDs are decided</h2>
+            <p class="lede" data-i18n="two_numbering_layers_because_a_question">Two numbering layers, because a question has two jobs: it appears in a sequence for the person answering, and it lives permanently in a database with a scoring record.</p>
+            <div class="table-scroll" style="margin:22px 0;">
+              <table class="spec">
+                <thead><tr><th data-i18n="layer">Layer</th><th data-i18n="format">Format</th><th data-i18n="example">Example</th><th data-i18n="rules">Rules</th></tr></thead>
+                <tbody>
+                  <tr><td><b data-i18n="display_id">Display ID</b></td><td class="mono">AES-Q + 001–016</td><td class="mono">AES-Q001</td><td data-i18n="the_answering_order_shown_as_question">The answering order. Shown as “Question 1 of 16” — never as a percentage.</td></tr>
+                  <tr><td><b data-i18n="internal_id">Internal ID</b></td><td class="mono" data-i18n="matrix_dimension_seq">[Matrix]_[Dimension]_[Seq]</td><td class="mono">AES_MIN_001</td><td data-i18n-html="html.matrix_codes_aes_per_lif_pet">Matrix codes: AES, PER, LIF, PET, FUT. Dimension codes: MIN, HER, ROM, SEN, AVA, EXT, CRA, VIN for Aesthetic. The same scheme is reserved for later matrices, e.g. <span class="mono">PER_SOC_001</span>.</td></tr>
+                  <tr><td><b data-i18n="indicator_pair">Indicator pair</b></td><td class="mono">[Letter][01–04] × [Letter][01–04]</td><td class="mono" data-i18n="m01_e01">M01 × E01</td><td data-i18n="stored_on_every_aesthetic_record_alongside">Stored on every Aesthetic record alongside the internal ID, with the two image IDs, because one question always spans two dimensions.</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="grid-2">
+              <div class="card"><h3 data-i18n="stability_rules">Stability rules</h3>
+                <ul class="tight">
+                  <li data-i18n="an_id_never_changes_once_published">An ID never changes once published, and is never reused.</li>
+                  <li data-i18n="editing_a_question_raises_its_version">Editing a question raises its version (e.g. 1.0 → 1.1); a substantial change creates a new ID.</li>
+                  <li data-i18n="old_results_stay_interpretable_through_the">Old results stay interpretable through the question, scoring-rule and content versions they were produced under.</li>
+                  <li data-i18n="ids_are_identical_across_all_language">IDs are identical across all language versions.</li>
+                </ul></div>
+              <div class="card"><h3 data-i18n="lifecycle_open_items">Lifecycle & open items</h3>
+                <ul class="tight">
+                  <li data-i18n="every_question_moves_through_draft_under">Every question moves through DRAFT → UNDER_REVIEW → PILOT → VALIDATED → PUBLISHED → ARCHIVED.</li>
+                  <li data-i18n="a_question_without_a_validated_scoring">A question without a validated scoring rule never enters the live assessment.</li>
+                  <li data-i18n="confirmed_pairings_q001_m01_e01_q002">Confirmed pairings: Q001 = M01 × E01, Q002 = M02 × E02, Q003 = M03 × E03, Q004 = M04 × E04, Q005 = H01 × V01. Pairings for Q006–Q016 are to be determined. Personality display IDs are reserved from PER-Q001 onwards. The total question count remains to be determined. Personality Identity is deferred.</li>
+                </ul></div>
+            </div>
+          </section>
+
+          <section class="block">
+            <p class="kicker" data-i18n="roadmap">Roadmap</p>
+            <h2 data-i18n="what_happens_next">What happens next</h2>
+            <div class="steps" style="margin-top:24px;">
+              <div class="step"><span class="n">01</span><h3 data-i18n="this_preview">This preview</h3><p data-i18n="foundation_v1_1_checked_on_ipad">Foundation V1.1 iPad Safari check pending: six pages, navigation, mobile and tablet layout to be verified.</p></div>
+              <div class="step"><span class="n">02</span><h3 data-i18n="first_image_batch">First image batch</h3><p data-i18n="eight_original_images_for_q001_q004">Eight original images for Q001–Q004, coded independently by two reviewers and reconciled.</p></div>
+              <div class="step"><span class="n">03</span><h3 data-i18n="full_bank_pilot">Full bank & pilot</h3><p data-i18n="the_remaining_24_images_all_16">The remaining 24 images, all 16 pairings frozen, then a pilot run with real users.</p></div>
+              <div class="step"><span class="n">04</span><h3 data-i18n="scoring_goes_live">Scoring goes live</h3><p data-i18n="validated_scoring_real_results_and_ai">Validated scoring, real results, and AI interpretation layered on top — in that order.</p></div>
+            </div>
+            <p class="small" style="margin-top:22px;" data-i18n="framework_documents_behind_this_foundation_produ">Framework documents behind this foundation: Product Foundation V1.0 · Assessment Framework V1.0 · Secondary Indicators V1.0 · Visual Coding Manual V1.0 · Question Bank Master Structure V1.0. Where those drafts still mention a mini-program, a Chinese-first launch or a two-matrix MVP, the decisions above supersede them.</p>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site">
+      <div class="wrap">
+        <span data-i18n="ai_self_discovery_platform_foundation_v1">Preview — the assessment is not open yet.</span>
+        <span data-i18n="for_self_exploration_and_entertainment_not">For self-exploration and entertainment. Not a psychological assessment, diagnosis, or personality typing.</span>
+      </div>
+    </footer>
+
+</body>
+    <script src="js/i18n.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
