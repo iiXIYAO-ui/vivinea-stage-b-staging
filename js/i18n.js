@@ -1,7 +1,7 @@
 (function () {
   'use strict';
   var STORAGE_KEY = 'vivinea-lang';
-  var SUPPORTED = ['en', 'zh-CN', 'zh-TW', 'ko', 'ja'];
+  var SUPPORTED = ['en', 'zh-CN', 'zh-TW', 'ko', 'ja', 'ru'];
   var cache = {};
   var current = 'en';
   // Sequence guard against fast language switching: each setLang call
@@ -22,6 +22,7 @@
     if (base === 'zh') return 'zh-CN';
     if (base === 'ko') return 'ko';
     if (base === 'ja') return 'ja';
+    if (base === 'ru') return 'ru';
     return 'en';
   }
   function detect() {
