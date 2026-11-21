@@ -1,4 +1,73 @@
-# CHANGELOG — vivinea-foundation-v1-2-r3-1 (Stage B, based on r3-remediation)
+# CHANGELOG — vivinea-foundation-v1-2-r3-2 (six-language release, based on M4.1)
+
+## 2026-11-20 — Six-language release r3.2: Russian as the sixth language (founder implementation authorization)
+
+New working copy `vivinea-foundation-v1-2-r3-2/`, branch `r3.2-six-lang`,
+from the protected M4.1 baseline (commit `e8d3149`, tag `v1.2-r3.1-m4.1`).
+The M4.1 candidate, its tag, and its ZIP are preserved untouched as the
+rollback point. Nothing pushed, nothing deployed; the current staging
+repository is not modified by this release.
+
+**Translation:** new `locales/ru.json` — all 279 keys translated from the
+English source (same key order, 0 missing / 0 extra / 0 empty, verified by
+script). The translation is an **assistant draft for founder review** —
+it has NOT been reviewed by a qualified Russian reviewer and must not be
+described as professionally verified. One draft error found and fixed
+during verification: a Chinese word (框架) left in the `html.
+why_only_one_is_open_each` value, corrected to «структура» and re-verified
+(279 keys, 0 CJK characters remain). The five existing locales are
+byte-identical to M4.1. Brand and product names preserved (VIVINEA,
+Aesthetic Identity → «Эстетическая идентичность», BEFORE BECOMING kept in
+English).
+
+**Detection and selector:** `js/i18n.js` — `'ru'` added to `SUPPORTED`;
+`normalize()` gains the `base === 'ru'` branch (so `ru`, `ru-RU`, `ru-*`
+all resolve to `ru`); `index.html` selector gains
+`<option value="ru">Русский</option>`. `localStorage` key `vivinea-lang`,
+first-visit browser detection, English fallback, and manual-choice-wins
+are unchanged.
+
+**Fonts — the material finding:** Archivo and Newsreader have **no
+Cyrillic subsets** (verified twice: Google Fonts css2 returns only latin /
+latin-ext / vietnamese for both families — a Roboto control returns
+cyrillic — and both served files contain 0/66 Russian codepoints). The
+six-language proposal's §3.3 assumed otherwise; it is corrected in the
+proposal file. Per the founder's decision (Option 1), the `ru` locale uses
+Cyrillic-capable OFL companion fonts: **Inter** (sans, 400/500/600/700)
+and **Noto Serif** (serif, 400/500/600 + italic 400) — 8 new self-hosted
+static WOFF2 files (cyrillic subset only) + licence files `OFL-Inter.txt`
+and `OFL-NotoSerif.txt`. Each file verified: declared weight ==
+usWeightClass, no `fvar`, 66/66 Russian codepoints in cmap. Neither family
+has an `opsz` axis, so no opsz pinning was needed. `css/main.css` gains 8
+`@font-face` blocks (cyrillic unicode-range
+`U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116`) and `:lang(ru)`
+font-family rules scoped to the `ru` locale only (body → Inter first,
+all Newsreader usages → Noto Serif first). Archivo and Newsreader are
+untouched for the other five languages. The 7 punctuation glyphs the
+cyrillic subsets do not contain (« · » × – — →) fall back to the hosted
+Latin faces / system fonts, exactly as in the other languages (→ already
+falls back to a system font in English today). No runtime Google Fonts
+requests: 0 external requests, verified live.
+
+**Verification:** 1,137 checks, ALL PASS, reported as four separate
+suites (they overlap; not independent requirements) — full regression
+`verify-r3-2.js` **667 checks** (base 441 + Russian section), hero
+correction suite **80**, M5 page probe **73**, Stage C gap probe **297**,
+plus the Russian typography screenshot script **20** (5 screenshots in
+`r3-2-screenshots/`). First regression run had 56 failures, all probe
+artefacts (the new section read `.page.active` by `id` — pages use
+`data-page` — and read the H1 unscoped, always returning the home H1);
+fixed in the script, candidate unchanged, re-run ALL PASS. Second run
+crashed on a Playwright API misuse (two arguments to `page.evaluate`);
+fixed in the script, candidate unchanged, re-run ALL PASS. Screenshots
+eyeballed: Russian home 1440/375/320, Aesthetic 1440, About 375 — correct
+Russian copy, Inter body / Noto Serif headings, no overflow, no clipping,
+no missing glyphs. See the r3.2 completion report for the full record.
+
+**Unresolved:** qualified human Russian review (translation stays
+provisional); real-device QA (P0-5); cross-region no-VPN (P0-4);
+final imagery; editorial review; social assets. Staging of this
+candidate needs its own separate approval.
 
 ## 2026-11-18 — Stage B M4 correction: placed hero image must be visible (founder independent review finding)
 

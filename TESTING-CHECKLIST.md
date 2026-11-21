@@ -1,8 +1,41 @@
-# TESTING CHECKLIST — Foundation V1.2 (r3.1, Stage B M4 + correction)
+# TESTING CHECKLIST — Foundation V1.2 (r3.2, six-language release)
 
 Run on a local HTTP server first, then again on each staging host.
 Tick each box only after actually checking it. Do not claim a pass
 that was not tested.
+
+## r3.2 — Russian as the sixth language (2026-11-20, founder implementation authorization)
+
+Verification scripts: `~/workspace/pw-check/verify-r3-2.js` (full
+regression + Russian section), `verify-m4-correction-r3-2.js`,
+`m5-page-probe-r3-2.js`, `stage-c-gap-probe-r3-2.js`,
+`r3-2-ru-shots.js` (Russian typography screenshots).
+**1,137 checks, ALL PASS**, reported as four separate suites (they
+overlap; not independent requirements): full regression **667**,
+hero correction **80**, M5 page probe **73**, Stage C gap probe **297**,
+Russian typography screenshots **20**. Final run logs:
+`/tmp/r32-verify3.log`, `/tmp/r32-correction.log`,
+`/tmp/r32-pageprobe.log`, `/tmp/r32-gapprobe.log`, `/tmp/r32-shots.log`.
+First regression run had 56 failures, all probe artefacts (the new
+section read `.page.active` by `id` — pages use `data-page` — and read
+the H1 unscoped, always returning the home H1); fixed in the script,
+candidate unchanged. Second run crashed on a Playwright API misuse
+(two arguments to `page.evaluate`); fixed in the script, candidate
+unchanged. Evidence screenshots: `r3-2-ru-home-full-{1440,375,320}.png`,
+`r3-2-ru-aesthetic-full-1440.png`, `r3-2-ru-about-full-375.png` in
+`r3-2-screenshots/` (eyeballed: correct Russian copy, Inter body /
+Noto Serif headings, no overflow, no clipping, no missing glyphs).
+
+- [x] `locales/ru.json`: 279 keys, same order as `en.json`, 0 missing / 0 extra / 0 empty (script-verified); the five existing locales byte-identical to M4.1.
+- [x] Font files: 8 new static WOFF2 (Inter 400/500/600/700, Noto Serif 400/500/600 + italic 400), each declared weight == usWeightClass, no `fvar`, 66/66 Russian codepoints; licences `OFL-Inter.txt` / `OFL-NotoSerif.txt` (both SIL OFL 1.1); the original 26 font files byte-identical to M4.1.
+- [x] CSS: 32 `@font-face` blocks (24 + 8 cyrillic), all 32 referenced files exist; `:lang(ru)` rules scope Inter / Noto Serif to the `ru` locale only; braces balanced.
+- [x] Cyrillic actually loads in the browser: `document.fonts.check` true for Inter 400/500/600/700 and Noto Serif 400/500/600 + italic 400 with a Cyrillic test string.
+- [x] Russian on all six pages × five widths (1440/1024/768/375/320): correct Russian H1, hero only on home, header dark / body white, no overflow.
+- [x] Detection: a `ru-RU` browser locale loads Russian by default; manual `ru` survives reload and navigation (localStorage `vivinea-lang`).
+- [x] Selector option `Русский` present; 279 keys × 6 locales, 0 empty.
+- [x] `mapping.json` SHA unchanged (32 slots pending); assessment inactive; 0 external requests; 0 image files.
+- [x] Punctuation fallback: the 7 glyphs the cyrillic subsets do not contain (« · » × – — →) render from the hosted Latin faces / system fonts, as in the other languages.
+- [x] Translation status: Russian is **provisionally reviewed** (assistant draft only); qualified human review still required — see PENDING-ASSETS §4.
 
 ## M4 correction — placed hero image must be visible (2026-11-18, founder independent review finding)
 

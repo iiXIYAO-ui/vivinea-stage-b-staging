@@ -11,6 +11,15 @@ Upload the *contents* of the `vivinea-foundation-v1-2-r3-1/` folder — not the
 folder itself — so `index.html` is at the site root. Keep the relative
 structure: `css/`, `js/`, `locales/`, `fonts/`, `assets/`.
 
+## r3.2 — six-language release (2026-11-20)
+
+Upload the *contents* of the `vivinea-foundation-v1-2-r3-2/` folder instead.
+File count is **52** (the 41 M4.1 files + `locales/ru.json` + 8 Cyrillic
+WOFF2 files + `OFL-Inter.txt` + `OFL-NotoSerif.txt`). The ZIP has 61
+entries (52 files + 9 directory entries). Staging of this candidate needs
+its own separate approval; do not replace the files in the current staging
+repository with this candidate until that approval is given.
+
 ## M4 — empty asset directories (Stage B M4, 2026-11-18)
 
 - `assets/hero/` and `assets/social/` exist in the candidate **empty**

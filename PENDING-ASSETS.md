@@ -131,6 +131,26 @@ All 24 @font-face blocks now match their files' usWeightClass
 (verified, 0 mismatches). Status: **resolved** — see CHANGELOG.md (M3)
 and the M3 completion report §4 for provenance and the correction.
 
+## 0b. Russian companion fonts — added in r3.2 (2026-11-20)
+
+Archivo and Newsreader have **no Cyrillic subsets** (Google Fonts css2
+returns only latin / latin-ext / vietnamese for both families; both
+served files contain 0/66 Russian codepoints — verified twice). Per the
+founder's decision (Option 1), the `ru` locale uses self-hosted OFL
+companion fonts: **Inter** (sans, 400/500/600/700) and **Noto Serif**
+(serif, 400/500/600 + italic 400) — 8 static WOFF2 files, cyrillic
+subset only, licences `fonts/OFL-Inter.txt` and
+`fonts/OFL-NotoSerif.txt`. Each file verified: declared weight ==
+usWeightClass, no `fvar`, 66/66 Russian codepoints. Neither family has
+an `opsz` axis. The CSS wires them via 8 cyrillic `@font-face` blocks
+(unicode-range `U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116`)
+and `:lang(ru)`-scoped font-family rules only; Archivo/Newsreader are
+untouched for the other five languages. The 7 punctuation glyphs the
+cyrillic subsets do not contain (« · » × – — →) fall back to the hosted
+Latin faces / system fonts, as in the other languages. Status:
+**implemented in r3.2** — see CHANGELOG.md (r3.2) and the r3.2 completion
+report §4 for provenance and verification.
+
 ## 1. Visual Design Archive / logo — corrected understanding
 
 Founder correction (2026-11-15): the earlier “Visual Design Archive /
@@ -197,8 +217,19 @@ ai-self-discovery-platform-foundation-v1-1.html`, SHA-256
 
 ## 4. Translation review — assistant draft review done in M3; human review still required before the candidate is complete
 
-- 279 keys × 5 languages. All keys are present in all five locale
-  files (missing keys: 0, verified by script).
+- 279 keys × 6 languages (Russian added in r3.2, 2026-11-20). All keys
+  are present in all six locale files (missing keys: 0, verified by
+  script). The five pre-existing locales are byte-identical to M4.1.
+- Russian (r3.2) is recorded as **provisionally reviewed** — an
+  assistant draft for founder review only. It has NOT been reviewed by
+  a qualified Russian reviewer and must not be described as
+  professionally verified. One draft error was found and fixed during
+  verification (a Chinese word, 框架, left in the
+  `html.why_only_one_is_open_each` value, corrected to «структура»;
+  re-verified: 279 keys, 0 CJK characters). Qualified human Russian
+  review of all 279 keys against the English source is still required,
+  including the hero tagline, the 32 indicator names and descriptions,
+  the assessment-inactive copy, and the disclaimer.
 - Stage B M3 (2026-11-18) completed a full assistant draft review of
   all 279 keys × 5 languages and applied 35 corrections across 33
   distinct keys (zh-TW 15 replacements / 13 keys, zh-CN 6, ko 8, ja 6 —
